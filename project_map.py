@@ -42,8 +42,8 @@ v_forest2.doors({'north': v_forest5, 'east': v_forest3, 'west': v_forest1, 'sout
 v_forest3.doors({'north': v_forest4, 'west': v_forest2})
 v_forest4.doors({'south': v_forest3, 'west': v_forest5})
 v_forest5.doors({'south': v_forest2, 'west': v_forest6, 'east': v_forest4})
-v_forest6.doors({'south': v_forest1, 'east': v_forest5})
-p_city.doors({'north': pcg1, 'east': p_city_mart})
+v_forest6.doors({'south': v_forest1, 'east': v_forest5, 'north': p_city})
+p_city.doors({'north': pcg1, 'east': p_city_mart, 'south': v_forest6})
 p_city_mart.doors({'west': p_city})
 # pcg = 'pewter city gym'
 pcg1.doors({'south': p_city, 'north': pcg4, 'west': pcg2})
