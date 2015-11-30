@@ -78,7 +78,7 @@ mew = Pokemon('mew', broom, {'psychic': 60, 'megapunch': 50}, 'mysterious pokemo
 pidgey = Pokemon('pidgey', route_1, {'gust': 20, 'tackle': 15}, 'tiny bird pokemon')
 rattata = Pokemon('rattata', route_1, {'tackle': 20}, 'mouse pokemon')
 caterpie = Pokemon('caterpie', v_forest2, {'tackle': 20}, 'worm pokemon')
-weedle = Pokemon('weedle', v_forest2, {'posionsting': 20}, 'hairy bug pokemon')
+weedle = Pokemon('weedle', v_forest2, {'poisonsting': 20}, 'hairy bug pokemon')
 metapod = Pokemon('metapod', v_forest3, {'harden': 5}, 'cocoon pokemon')
 kakuna = Pokemon('kakuna', v_forest5, {'harden': 5}, 'cocoon  pokemon')
 scyther = Pokemon('scyther', v_forest6, {'slash': 35, 'cut': 20}, 'mantis pokemon')
@@ -173,7 +173,7 @@ def move_others():
                 et.attack(['attack', 'ash'], 'bubble')
             elif 'ember' in move:
                 et.attack(['attack', 'ash'], 'ember')
-            elif 'posionsting' in move:
+            elif 'poisonsting' in move:
                 et.attack(['attack', 'ash'], 'posionsting')
             elif 'slash' in move:
                 et.attack(['attack', 'ash'], 'slash')
