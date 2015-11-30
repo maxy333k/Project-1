@@ -218,10 +218,11 @@ class Trainer():
                 if enemy.name == command[1] and \
                    enemy.location == self.location:
                     damage = self.weapon.damage[move]
-                    if damage > 0:
-                        enemy.health -= random.choice(range(damage - 5, damage + 5))
+                    d = random.choice(range(damage - 5, damage + 10))
+                    if d > 0:
+                        enemy.health -= d
                     print('\n{} has been hit for '.format(
-                        enemy.name) + str(damage) + '!\n')
+                        enemy.name) + str(d) + '!\n')
                     if enemy.health <= 0:
                         print('\n{} has blacked out!\n'.format(enemy.name))
                         if enemy.weapon:
