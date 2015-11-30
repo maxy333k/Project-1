@@ -205,12 +205,6 @@ class Trainer():
             print('\nYou don\'t have that!\n')
 
     def attack(self, command, move):
-        if len(command) < 2:
-            print('\n{} what?\n'.format(
-                command[0][0].upper() + command[0][1:]))
-            return
-        if not self.weapon:
-            print('\nYou have not chosen a pokemon!\n')
         if move not in self.weapon.damage.keys():
             print('\nMove not available!\n')
         else:
