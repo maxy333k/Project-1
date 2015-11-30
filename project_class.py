@@ -80,17 +80,17 @@ description: {}'.format(self.name,
 
 class Potion():
     name = ''
-    discription = ''
+    description = ''
     modifier = 0
     
-    def __init__(self, name, discription, modifier):
+    def __init__(self, name, description, modifier):
         self.name = name
-        self.discription = discription
+        self.description = description
         self.modifier = modifier
         
     def __str__(self):
-        output = 'name: {}, discription: {}, \
-        modifier: {}'.format(self.name, self.discription, self.modifier)
+        output = 'name: {}, description: {}, \
+        modifier: {}'.format(self.name, self.description, self.modifier)
         return output
         
     def examine(self):
