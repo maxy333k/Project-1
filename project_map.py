@@ -92,6 +92,7 @@ starters.append(bulb)
 starters.append(squirt)
 starters.append(charm)
 
+# I know it says add_pokemon. pokemon is being used as an item
 p_city_mart.add_pokemon(potion)
 p_city_mart.add_pokemon(potion)
 p_city_mart.add_pokemon(potion)
@@ -115,16 +116,16 @@ rb1.inventory = [potion]
 
 bt1 = Trainer('bug_trainer_bryce')
 bt1.weapon = weedle2
-bt1.location = v_forrest1
+bt1.location = v_forest1
 
 bt2 = Trainer('bug_trainer_dillon')
 bt2.weapon = scyth
-bt2.location = v_forrest4
+bt2.location = v_forest4
 bt2.inventory = [potion]
 
 bt3 = Trainer('bug_trainer_zak')
 bt3.weapon = butterfree
-bt3.location = v_forrest6
+bt3.location = v_forest6
 bt3.inventory = [potion]
 
 at2 = Trainer('ace_trainer_mike')
