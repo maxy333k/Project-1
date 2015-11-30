@@ -54,7 +54,8 @@ def main():
 
 def command_help():
     output = '\n\nCommands: go, look, list, drop, get, choose, moves,'
-    output += ' attack, kill, health, use, help, and quit.\n'
+    output += ' attack(target then sperated by a space move), kill(same as attack command),'
+    output += ' health, use, help, and quit.\n'
     return output
 
 
