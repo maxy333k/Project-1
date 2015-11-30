@@ -38,6 +38,9 @@ def main():
         elif command[0] == 'attack' or command[0] == 'kill':
             if player.weapon == None:
                 print('\nYou have not chosen a pokemon!\n')
+            elif len(command) < 2:
+                print('\n{} what?\n'.format(
+                    command[0][0].upper() + command[0][1:]))
             elif len(command) < 3:
                 print('\nWhat move {}?\n'.format(player.weapon.damage))
             elif len(command) < 4:
@@ -46,7 +49,7 @@ def main():
             print('\nI don\'t understand you.\n')
         project_map.move_others()
         if player.health <= 0:
-            print('\nGAME OVER')
+            print('\nGAME OVER!')
             break
         command = input('>>> ').lower().split()
         while not command:
