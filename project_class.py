@@ -89,15 +89,13 @@ class Potion():
         self.modifier = modifier
         
     def __str__(self):
-        output = 'name: {}, discription: {}, location: {}, \
-        modifier: {}'.format(self.name, self.discription, self.location, self.modifier)
+        output = 'name: {}, discription: {}, \
+        modifier: {}'.format(self.name, self.discription, self.modifier)
         return output
         
     def examine(self):
         return self.description
 
-    def drop(self, room):
-        self.location = room
 
 class Trainer():
     name = ''
@@ -182,6 +180,8 @@ class Trainer():
         for thing in self.inventory:
             if command[1] == thing.name:
                 self.health += thing.modifier
+                if self.health > 100:
+                    self.health = 100
                 self.inventory.remove(thing)
                 print('\nYou used a {}.\n'.format(
                     thing.description))
