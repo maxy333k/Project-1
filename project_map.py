@@ -174,7 +174,7 @@ def move_others():
             elif 'ember' in move:
                 et.attack(['attack', 'ash'], 'ember')
             elif 'poisonsting' in move:
-                et.attack(['attack', 'ash'], 'posionsting')
+                et.attack(['attack', 'ash'], 'poisonsting')
             elif 'slash' in move:
                 et.attack(['attack', 'ash'], 'slash')
             elif 'charm' in move:
