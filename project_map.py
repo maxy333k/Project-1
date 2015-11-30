@@ -1,6 +1,7 @@
 from project_class import Room
 from project_class import Pokemon
 from project_class import Trainer
+from project_class import Potion
 import random
 
 v_city = Room('Viridian City', {}, [])
@@ -68,7 +69,7 @@ scyth = Pokemon('scyther', v_forest6, {'slash': 35}, 'dillon\'s mantis pokemon')
 cubone = Pokemon('cubone', pcg7, {'bonemerang': 36}, 'grant\'s lonely pokemon')
 onix = Pokemon('onix', brock, {'irontail': 40,}, 'brock\'s rock snake pokemon')
 diglett = Pokemon('diglett', pcg4, {'dig': 35,}, 'david\'s mole pokemon')
-butterfree = Pokemon('butterfree', v_forrest6, {'charm': 1}, 'zak\'s butterfly pokemon')
+butterfree = Pokemon('butterfree', v_forest6, {'charm': 1}, 'zak\'s butterfly pokemon')
 
 bulbasaur = Pokemon('bulbasaur', oak, {'absorb': 20}, 'The grass starter')
 squirtle = Pokemon('squirtle', oak, {'bubble': 20}, 'The water starter')
