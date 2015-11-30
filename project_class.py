@@ -184,7 +184,7 @@ class Trainer():
                     self.health = 100
                 self.inventory.remove(thing)
                 print('\nYou used a {}.\n'.format(
-                    thing.description))
+                    thing.name))
                 return
         else:
             print('\nYou don\'t have that!\n')
@@ -219,7 +219,7 @@ class Trainer():
                    enemy.location == self.location:
                     damage = self.weapon.damage[move]
                     d = random.choice(range(damage - 5, damage + 10))
-                    if d > 0:
+                    if d >= 0:
                         enemy.health -= d
                     print('\n{} has been hit for '.format(
                         enemy.name) + str(d) + '!\n')
