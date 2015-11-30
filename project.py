@@ -44,6 +44,7 @@ def main():
                 player.attack([command[0], command[1]], command[2])
         else:
             print('\nI don\'t understand you.\n')
+        project_map.move_others()
         if player.health <= 0:
             print('\nGAME OVER')
             break
