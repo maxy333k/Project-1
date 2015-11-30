@@ -55,6 +55,9 @@ pcg7.doors({'south': pcg6, 'east': pcg8})
 pcg8.doors({'south': pcg5, 'north': brock, 'west': pcg7})
 brock.doors({'south': pcg8})
 
+potion = Potion('potion', 'heals for 20 health', 20)
+super_potion = Potion('super_potion', 'heals for 50 health', 50)
+
 starters = []
 bulb = Pokemon('bulbasaur', route_1, {'absorb': 5}, 'gary\'s grass starter')
 squirt = Pokemon('squirtle', route_1, {'bubble': 5}, 'gary\'s water starter')
@@ -87,6 +90,20 @@ broom.add_pokemon(mew)
 starters.append(bulb)
 starters.append(squirt)
 starters.append(charm)
+
+p_city_mart.add_pokemon(potion)
+p_city_mart.add_pokemon(potion)
+p_city_mart.add_pokemon(potion)
+p_city_mart.add_pokemon(potion)
+p_city_mart.add_pokemon(potion)
+p_city_mart.add_pokemon(super_potion)
+v_city_mart.add_pokemon(potion)
+v_city_mart.add_pokemon(potion)
+v_city_mart.add_pokemon(potion)
+v_city_mart.add_pokemon(potion)
+v_city_mart.add_pokemon(potion)
+v_city_mart.add_pokemon(super_potion)
+broom.add_pokemon(super_potion)
 
 player = Trainer('ash')
 
