@@ -34,6 +34,8 @@ def main():
                 print(player.weapon.name + ' ' + str(
                     player.weapon.damage))
         elif command[0] == 'choose':
+            if player.weapon != None:
+                player.inventory.append(player.weapon)
             player.wield(command)
         elif command[0] == 'attack' or command[0] == 'kill':
             if player.weapon == None:
