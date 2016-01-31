@@ -1,7 +1,4 @@
-from project_class import Room
-from project_class import Pokemon
-from project_class import Trainer
-from project_class import Potion
+from project_class import *
 import random
 
 v_city = Room('Viridian City', {}, [])
